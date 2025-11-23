@@ -1,0 +1,750 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+/* Login Page Styles */
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #EFF6FF 0%, #E0E7FF 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-circle {
+  width: 64px;
+  height: 64px;
+  background: #4F46E5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.login-header h1 {
+  font-size: 32px;
+  color: #1F2937;
+  margin-bottom: 8px;
+}
+
+.login-header p {
+  color: #6B7280;
+  font-size: 16px;
+}
+
+.tech-stack {
+  font-size: 14px !important;
+  color: #9CA3AF !important;
+  margin-top: 4px;
+}
+
+.google-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.features {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.features p {
+  color: #6B7280;
+  font-size: 14px;
+  margin: 12px 0;
+  text-align: left;
+}
+
+/* Loading Screen */
+.loading-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #EFF6FF 0%, #E0E7FF 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.loading-container p {
+  color: #6B7280;
+  font-size: 16px;
+}
+
+.login-form {
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #4F46E5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background: #4338CA;
+}
+
+.login-note {
+  text-align: center;
+  color: #6B7280;
+  font-size: 14px;
+}
+
+/* Main App Styles */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #EFF6FF 0%, #E0E7FF 100%);
+}
+
+.header {
+  background: white;
+  border-bottom: 1px solid #E5E7EB;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  background: #4F46E5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-left h1 {
+  font-size: 20px;
+  color: #1F2937;
+  margin-bottom: 2px;
+}
+
+.header-left p {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  background: transparent;
+  border: none;
+  color: #6B7280;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.logout-button:hover {
+  color: #1F2937;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* Upload Card */
+.upload-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  margin-bottom: 24px;
+}
+
+.upload-card h2 {
+  font-size: 28px;
+  color: #1F2937;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #6B7280;
+  margin-bottom: 24px;
+}
+
+.upload-area {
+  border: 2px dashed #D1D5DB;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+.upload-area:hover {
+  border-color: #818CF8;
+}
+
+.file-name {
+  color: #374151;
+  font-weight: 500;
+  margin: 16px 0 8px;
+}
+
+.file-info {
+  color: #6B7280;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.browse-button {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #F3F4F6;
+  color: #374151;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.browse-button:hover {
+  background: #E5E7EB;
+}
+
+/* Upload Actions */
+.upload-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.upload-button {
+  flex: 1;
+  padding: 14px;
+  background: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.upload-button:hover {
+  background: #4338CA;
+}
+
+.upload-button:disabled {
+  background: #9CA3AF;
+  cursor: not-allowed;
+}
+
+.cancel-button {
+  padding: 14px 24px;
+  background: transparent;
+  border: none;
+  color: #6B7280;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.cancel-button:hover {
+  color: #1F2937;
+}
+
+/* Success Message */
+.success-message {
+  margin-top: 16px;
+  padding: 16px;
+  background: #D1FAE5;
+  border: 1px solid #86EFAC;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #065F46;
+}
+
+/* Documents Card */
+.documents-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+}
+
+.documents-card h3 {
+  font-size: 24px;
+  color: #1F2937;
+  margin-bottom: 24px;
+}
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #F9FAFB;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.document-item:hover {
+  background: #F3F4F6;
+}
+
+.document-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.doc-name {
+  font-weight: 500;
+  color: #1F2937;
+  margin-bottom: 4px;
+}
+
+.doc-details {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.view-button {
+  padding: 10px 20px;
+  background: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.view-button:hover {
+  background: #4338CA;
+}
+
+/* Flashcard Viewer Styles */
+.flashcard-viewer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #EFF6FF 0%, #E0E7FF 100%);
+  padding: 24px;
+}
+
+.flashcard-header {
+  max-width: 800px;
+  margin: 0 auto 32px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  color: #374151;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 16px;
+}
+
+.back-button:hover {
+  background: #F9FAFB;
+  border-color: #4F46E5;
+  color: #4F46E5;
+}
+
+.flashcard-title {
+  text-align: center;
+}
+
+.flashcard-title h2 {
+  font-size: 28px;
+  color: #1F2937;
+  margin-bottom: 8px;
+}
+
+.flashcard-title p {
+  color: #6B7280;
+  font-size: 16px;
+}
+
+.flashcard-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flashcard {
+  background: transparent;
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+  background: #F0F9FF;
+}
+
+.card-label {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4F46E5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-text {
+  font-size: 24px;
+  color: #1F2937;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.flip-hint {
+  position: absolute;
+  bottom: 24px;
+  font-size: 14px;
+  color: #9CA3AF;
+}
+
+.flashcard-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.control-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: white;
+  border: 2px solid #4F46E5;
+  border-radius: 8px;
+  color: #4F46E5;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.control-button:hover:not(:disabled) {
+  background: #4F46E5;
+  color: white;
+}
+
+.control-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: #D1D5DB;
+  color: #9CA3AF;
+}
+
+.flip-btn {
+  background: #4F46E5;
+  color: white;
+}
+
+.flip-btn:hover {
+  background: #4338CA;
+}
+
+/* Statistics Card */
+.stats-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1F2937;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+/* Document Actions */
+.document-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.delete-button {
+  padding: 10px;
+  background: #FEE2E2;
+  border: none;
+  border-radius: 8px;
+  color: #DC2626;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-button:hover {
+  background: #FCA5A5;
+}
+
+/* Login Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.divider span {
+  padding: 0 16px;
+  color: #9CA3AF;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Google Sign In Button */
+.google-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* User Avatar */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #E5E7EB;
+}
+
+/* Google Button */
+.google-button {
+  width: 100%;
+  padding: 14px;
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1F2937;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s;
+}
+
+.google-button:hover {
+  background: #F9FAFB;
+  border-color: #4285F4;
+}
+
+.google-button svg {
+  flex-shrink: 0;
+}
+
+/* Features List */
+.features {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.features p {
+  color: #6B7280;
+  font-size: 14px;
+  margin: 12px 0;
+  text-align: left;
+}
+
+/* Loading Screen */
+.loading-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #EFF6FF 0%, #E0E7FF 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.loading-container p {
+  color: #6B7280;
+  font-size: 16px;
+}
+
+/* Empty State */
+.empty-state {
+  background: white;
+  border-radius: 16px;
+  padding: 64px 40px;
+  text-align: center;
+}
+
+.empty-state h3 {
+  font-size: 20px;
+  color: #1F2937;
+  margin: 16px 0 8px;
+}
+
+.empty-state p {
+  color: #6B7280;
+  font-size: 16px;
+}
+
+.features > p {
+  text-align: center;
+}
