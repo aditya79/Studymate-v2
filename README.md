@@ -1,1 +1,1 @@
-# StudyMate
+# Studymate-v2
